@@ -1,0 +1,118 @@
+body{
+    width: 80%;
+    margin: auto;
+}
+#titulo-tareas{
+    text-align: center ;
+}
+
+.container{
+    color: rgb(8, 8, 8)
+}
+
+#caja-tareas{
+    border: black solid 2px;
+    min-height: 50vh;
+    min-width: 100vh;
+    border-radius: 15px;
+    background-color: aqua;
+    margin-bottom: 30px;
+    }
+
+#boton-ingresar{
+    background-color:blue ;
+    border-radius: 5px;
+    height: 35px;
+
+}
+
+#ingresar-tarea{
+    border-radius: 1px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+
+.main-div{
+    display: flex;
+    background-color:aliceblue;
+    justify-content: space-around;
+    border: 40px solid black;
+    min-width: 100vh;
+}
+
+.task-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed-div{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circulo{
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circulo span{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+.input-div{
+    padding-right: 10%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#tareas-completadas{
+    height: 6px;
+}
+
+#no-hay-tareas{
+    text-align: center;
+    display: flex;
+}
+
+#listaTareas{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTareas li{
+    list-style-type: none;
+}
+
+.estilolista{
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.estilolista input{
+    width: 10%;
+}
+.estilolista label{
+    width: 60%;
+}
+
+.estilolista button{
+    width: 30%;
+}
+
+.estilolista:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
