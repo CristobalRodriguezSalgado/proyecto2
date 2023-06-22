@@ -13,7 +13,7 @@ body{
 #caja-tareas{
     border: black solid 2px;
     min-height: 50vh;
-    min-width: 100vh;
+    max-width: 100%;
     border-radius: 15px;
     background-color: aqua;
     margin-bottom: 30px;
@@ -37,19 +37,24 @@ body{
     display: flex;
     background-color:aliceblue;
     justify-content: space-around;
-    border: 40px solid black;
+    border: 40px solid rgb(0, 0, 0);
     min-width: 100vh;
+    
 }
 
 .task-div{
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .completed-div{
-    width: 30%;
+    width: 40%;
+    height: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .circulo{

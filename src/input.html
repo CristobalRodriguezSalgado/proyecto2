@@ -13,7 +13,6 @@
 <body>
     <div class="main-div">
         <div id="caja-principal">
-
         </div>
     </div>
 
@@ -24,19 +23,23 @@
 
     <div class="task-div">
         <div class="input-div">
+            <form action="" method="post" onsubmit="return false;">
             <input id="ingresar-tarea" class="my-2" type="text" placeholder="Ingresar Tarea">
-            <button class="btn w-auto" id="boton-ingresar" type="button">Agregar</button>
+            <button class="btn w-2" id="boton-ingresar" type="button">Agregar</button>
+                
         </div>
         <div class="completed-div">
-            <p id="tareas-completadas">Tareas <br> completadas</p>
-            <p class="circulo"><span>1</span></p>
+            <h3 style="color: black;height: 6px;">Tareas <br> completadas</h3>
+            <p class="circulo"><span id="span">0</span></p>
         </div>
     </div>
+</form>
 
     <div class="caja">
         <div id="caja-tareas">
             <ul id="listaTareas">
                 
+
             </ul>
         </div>
     </div>
