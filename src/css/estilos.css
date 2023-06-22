@@ -1,63 +1,67 @@
-body{
+body {
     width: 80%;
     margin: auto;
-}
-#titulo-tareas{
-    text-align: center ;
+    border-radius: 86px;
+    background-color: #f56161;
+    max-width: max-content;
+    height: max-content;
+    border-radius: 50px;
+    box-shadow: 21px 21px 42px #622727,
+        -21px -21px 42px #ff9b9b;
 }
 
-.container{
-    color: rgb(8, 8, 8)
+#titulo-tareas {
+    text-align: center;
 }
 
-#caja-tareas{
+#caja-tareas {
     border: black solid 2px;
     min-height: 50vh;
     max-width: 100%;
-    border-radius: 15px;
-    background-color: aqua;
+    border-radius: 15px;        
+    background-color: #0dcee7;
     margin-bottom: 30px;
-    }
+}
 
-#boton-ingresar{
-    background-color:blue ;
+#boton-ingresar {
+    background-color: blue;
     border-radius: 5px;
-    height: 35px;
+    height: 33px;
 
 }
 
-#ingresar-tarea{
+#ingresar-tarea {
     border-radius: 1px;
     flex-direction: column;
     border-radius: 5px;
 }
 
-
-.main-div{
+/* .main-div {
     display: flex;
-    background-color:aliceblue;
     justify-content: space-around;
-    border: 40px solid rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
     min-width: 100vh;
-    
-}
+    border-radius: 50px;
+} */
 
-.task-div{
+.task-div {
     min-height: 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #0dcee7;
+    margin-bottom: 30px;
 }
 
-.completed-div{
-    width: 40%;
+.completed-div {
+    width: 60%;
     height: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.circulo{
+.circulo {
     width: 80px;
     height: 80px;
     border: 3px solid black;
@@ -65,40 +69,40 @@ body{
     position: relative;
 }
 
-.circulo span{
+.circulo span {
     position: absolute;
     margin-top: 20%;
     margin-left: 40%;
 }
 
-.input-div{
+.input-div {
     padding-right: 10%;
     width: 60%;
     display: flex;
     flex-direction: column;
 }
 
-#tareas-completadas{
+#tareas-completadas {
     height: 6px;
 }
 
-#no-hay-tareas{
+#no-hay-tareas {
     text-align: center;
     display: flex;
 }
 
-#listaTareas{
+#listaTareas {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
-#listaTareas li{
+#listaTareas li {
     list-style-type: none;
 }
 
-.estilolista{
+.estilolista {
     display: flex;
     margin: 10px;
     padding: 20px;
@@ -106,18 +110,23 @@ body{
     border-radius: 15px;
 }
 
-.estilolista input{
+.estilolista input {
     width: 10%;
 }
-.estilolista label{
+
+.estilolista label {
     width: 60%;
 }
 
-.estilolista button{
+.estilolista button {
     width: 30%;
 }
 
-.estilolista:hover{
+.estilolista:hover {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+#titulo {
+    background-color: aliceblue;
 }
