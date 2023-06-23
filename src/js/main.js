@@ -1,3 +1,22 @@
+var nuevaCookie ="hola soy galleta";
+
+document.console
+
+
+
+
+
+var miGalleta
+
+
+
+
+
+
+
+
+
+
 var input = document.getElementById("ingresar-tarea");
 var button = document.getElementById("boton-ingresar");
 var ul = document.getElementById("listaTareas");

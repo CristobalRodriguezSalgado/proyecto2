@@ -15,7 +15,7 @@ body {
 }
 
 #caja-tareas {
-    border: black solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     min-height: 50vh;
     max-width: 100%;
     border-radius: 15px;        
@@ -64,7 +64,7 @@ body {
 .circulo {
     width: 80px;
     height: 80px;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 252, 252);
     border-radius: 50%;
     position: relative;
 }
@@ -106,7 +106,7 @@ body {
     display: flex;
     margin: 10px;
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
 }
 
