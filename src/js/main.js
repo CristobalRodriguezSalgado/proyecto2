@@ -1,21 +1,51 @@
-var nuevaCookie ="hola soy galleta";
+//inport {lo que quiero importar} from "de donde" "archivo"
 
-document.console
+import {decirHola, mensaje, Persona, obtenerPokemon,getPokemon,obtenerPoke,obtenerTarea} from './llamadasServidor.js';
+console.log("Mi mensaje", mensaje);
 
-
-
-
-
-var miGalleta
+decirHola("Profe");
 
 
 
+var miPersona = new Persona();
+console.log(miPersona.nombre);
+
+var miRespuesta = obtenerPokemon("pikachu");
+
+miRespuesta.then(
+    (response) => {
+        console.log("Response", response);
+        return response.json();
+    }
+    
+).then(
+    (data)=> {
+        console.log(data);
+    }
+)
+//<---------------------------------------------------------------------------------------------------->
+
+var miResultado = await obtenerPokemon("gengar");
+var datosGengar = await miResultado.json();
+console.log("Esperando a Gengar", datosGengar)
+
+var pokemon = await getPokemon("snorlax");
+console.log("Mi pokemon es: ", pokemon);
+
+
+//<---------------------------------------------------------------------------------------------------->
+var miPokemon = await obtenerPoke("pikachu")
+console.log("Mi pokemon",miPokemon);
+
+//<----------------------------------tareass---------------------------------------------------->
+
+var miTarea = await obtenerTarea("task")
+console.log("Mi tarea es", miTarea);
 
 
 
-
-
-
+//-----------------------------------------------------------------------------------------------------
+//proyecto inicio---------------------------------------------------------------------------------------
 
 var input = document.getElementById("ingresar-tarea");
 var button = document.getElementById("boton-ingresar");
@@ -23,7 +53,7 @@ var ul = document.getElementById("listaTareas");
 var span = document.getElementById("span");
 
 
-//const taskLabel = document.createElement("label");
+
 
 
 
@@ -58,7 +88,7 @@ function nuevaTarea() {
         btn.setAttribute("class", "btn btn-danger");
         btn.textContent = "Eliminar";
         
-        //listItem.appendChild(taskLabel);
+
 
     }
 
@@ -115,23 +145,3 @@ function tareaRepetida() {
     }    
 }
 
-// function noRepetirTarea() {
-   // var tareaRepetida = "";
-    //var listaTareas = document.querySelector("['type=li']");
-
-    
-    
-    
-   // str.repeat(count) //
-
-   // function addTask() {
-  //  const taskText = taskInput.value.trim();}
-
-   // if (taskText !== "") {
-       // const existingTasks = Array.from(taskList.getElementsByTagName("label"));
-      //  const isTaskDuplicate = existingTasks.some(task => task.textContent === taskText);}
-
-       // if (isTaskDuplicate) {
-       // alert("tarea repitida, revise sus notas");
-        //return;
-       // }

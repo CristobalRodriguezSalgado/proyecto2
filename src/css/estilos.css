@@ -1,4 +1,5 @@
 body {
+    background-image: url(https://cdn.pixabay.com/photo/2020/12/27/12/07/sunrise-5863751_1280.png);
     width: 80%;
     margin: auto;
     border-radius: 86px;
@@ -6,8 +7,8 @@ body {
     max-width: max-content;
     height: max-content;
     border-radius: 50px;
-    box-shadow: 21px 21px 42px #622727,
-        -21px -21px 42px #ff9b9b;
+    box-shadow: 21px 21px 42px #e5dc38,
+        -21px -21px 42px rgb(244, 202, 33);
 }
 
 #titulo-tareas {
@@ -15,16 +16,17 @@ body {
 }
 
 #caja-tareas {
+    
     border: rgb(255, 255, 255) solid 2px;
     min-height: 50vh;
     max-width: 100%;
     border-radius: 15px;        
-    background-color: #0dcee7;
+    
     margin-bottom: 30px;
 }
 
 #boton-ingresar {
-    background-color: blue;
+    background-color: rgb(229, 229, 58);
     border-radius: 5px;
     height: 33px;
 
@@ -49,7 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #0dcee7;
+    
     margin-bottom: 30px;
 }
 
@@ -73,7 +75,7 @@ body {
     position: absolute;
     margin-top: 20%;
     margin-left: 40%;
-    color: aliceblue;
+    color: rgb(243, 243, 243);
 }
 
 .input-div {
@@ -128,3 +130,6 @@ body {
     cursor: pointer;
 }
 
+#caja-principal{
+    margin-top: 10%;
+}
